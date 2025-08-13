@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-h=3cy7f5(r7o#yc$94rg4#wvm$8z9sdt-sn4!ewms62c(=o_c@'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -128,8 +128,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# STRIPE_PUBLISHABLE_KEY = "pk_test_51RuaLVEEZ7vl6WZO43xB9bWRJL0VwJXrULUr1KNwL70mPUNcxDxJwGCQ74GLCEg0AMp7kXPH9rN2o6iDXlXvtzNG007YcPlwHR"  # Replace with your test publishable key
-# STRIPE_SECRET_KEY = "sk_test_51RuaLVEEZ7vl6WZONEBlCrbSX3AJk2vWCjOL6SxgFmkeQZZuGTjHTqYrBLlAcoX4pu9hTvCqrVjiPFK3W2EDTNP600x6MI87Oz"      # Replace with your test secret key
+
 
 PAYPAL_RECEIVER_EMAIL = "sb-sq9j545182185@business.example.com"
 PAYPAL_TEST = True
