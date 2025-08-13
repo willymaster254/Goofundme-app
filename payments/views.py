@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect
 from .forms import DonationForm
 from paypal.standard.forms import PayPalPaymentsForm
 
-stripe.api_key = settings.STRIPE_SECRET_KEY
+# stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def home(request):
     return render(request, "index.html")
