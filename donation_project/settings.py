@@ -128,8 +128,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STRIPE_PUBLISHABLE_KEY = "pk_test_51RuaLVEEZ7vl6WZO43xB9bWRJL0VwJXrULUr1KNwL70mPUNcxDxJwGCQ74GLCEg0AMp7kXPH9rN2o6iDXlXvtzNG007YcPlwHR"  # Replace with your test publishable key
-STRIPE_SECRET_KEY = "sk_test_51RuaLVEEZ7vl6WZONEBlCrbSX3AJk2vWCjOL6SxgFmkeQZZuGTjHTqYrBLlAcoX4pu9hTvCqrVjiPFK3W2EDTNP600x6MI87Oz"      # Replace with your test secret key
+# STRIPE_PUBLISHABLE_KEY = "pk_test_51RuaLVEEZ7vl6WZO43xB9bWRJL0VwJXrULUr1KNwL70mPUNcxDxJwGCQ74GLCEg0AMp7kXPH9rN2o6iDXlXvtzNG007YcPlwHR"  # Replace with your test publishable key
+# STRIPE_SECRET_KEY = "sk_test_51RuaLVEEZ7vl6WZONEBlCrbSX3AJk2vWCjOL6SxgFmkeQZZuGTjHTqYrBLlAcoX4pu9hTvCqrVjiPFK3W2EDTNP600x6MI87Oz"      # Replace with your test secret key
 
 PAYPAL_RECEIVER_EMAIL = "sb-sq9j545182185@business.example.com"
 PAYPAL_TEST = True
