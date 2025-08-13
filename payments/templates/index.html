@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GoofundMe — Humanity all Times</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta name="description" content="Donate to verified campaigns for food, disaster relief, medical care, education and more. Transparent, secure, and impact driven."/>
+  
+</head>
+<body>
+<div class="container">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="margin-left: 9%;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+     
+    
+      <div class="brand" aria-label="GoofundMe branding">
+        <div class="logo">G</div>
+        <div>
+          <div style="font-size:.95rem">GoofundMe</div>
+          <div style="font-size:.78rem;color:var(--muted)">Support The Less Fortunate</div>
+        </div>
+      </div>
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#discover">Discover</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#stories">Stories</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#impact">Impact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'payment_selection' %}">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testmonials">Testimonials</a>
+        </li>
+
+         <li class="nav-item">
+           
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul> -->
+        <!-- </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+      <form class="d-flex">
+        <a href="{% url 'payment_selection' %}"><button type="button" class="btn btn-success btn-sm">Donations</button></a>
+        
+      </form>
+    </div>
+  </div>
+</nav>
+</div>
+<!-- introduction section -->
+ <section class="hope-section">
+    <div class="hope-text">
+        
+            
+            <span class="highlight"><i class="fas fa-heart heart-icon"></i></span><br>
+            <span class="highlight">Give Hope.</span><br>
+            <span class="highlight">Deliver Essentials.</span><br>
+            <span class="highlight">Rebuild Lives. </span><br>
+    
+    </div>
+    <div class="hope-image">
+        <!-- <img src="https://i.pinimg.com/736x/37/2e/ab/372eab06cef3b588d88cd78e2abb7113.jpg" alt="Helping hands cartoon"> -->
+    </div>
+</section>
+<!-- end -->
+  <main>
+    <!-- HERO -->
+    <section class="container hero" aria-labelledby="hero-heading">
+      <div class="hero-grid">
+        <div>
+          <h1 id="hero-heading">Together We Can</h1>
+          <p>Every contribution helps: from emergency food and medical care to rebuilding after fire, storms, or conflict. Donations are verified and distributed transparently to trusted local partners and campaign organizers.</p>
+          <div>
+            <a href="{% url 'payment_selection' %}"><button class="primary-cta" id="open-donate">Donate Now</button></a>
+            
+            <a class="secondary" href="#discover">Explore Campaigns</a>
+          </div>
+
+          <div style="margin-top:1.2rem" class="muted small">
+            <strong>Why donate through GoofundMe?</strong>
+            <div>Low platform fees, secure payments, clear updates from recipients, and verified campaigns backed by local partners.</div>
+          </div>
+        </div>
+
+        <aside class="hero-visual" aria-hidden="false">
+          <div class="impact-box">
+            <div class="stat"><strong>$4,829,420</strong><div class="tiny">Total raised this month</div></div>
+            <div style="height:8px"></div>
+            <div class="stat"><strong>12,741</strong><div class="tiny">Donors</div></div>
+            <div style="height:10px"></div>
+            <div class="stat"><strong>1,824</strong><div class="tiny">Active campaigns</div></div>
+            <hr style="border:none;border-top:1px solid #eef6f5;margin:10px 0" />
+            <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+              <span class="badge" title="Secure payments">🔒 Secure payments</span>
+              <span class="badge" title="Verified campaigns">✅ Verified organizers</span>
+              <span class="badge" title="Transparent disbursal">📤 Fast transfers</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CAMPAIGNS GRID -->
+    <section class="container" id="discover" aria-labelledby="discover-title">
+      <div class="section-title">
+        <h2 id="discover-title">Featured Campaigns</h2>
+        <div class="muted small">Carefully selected active campaigns that need immediate support</div>
+      </div>
+
+      <div class="cards-grid" id="campaigns">
+        <!-- Card 1 -->
+        <article class="card" data-progress="72" data-raised="7200" data-goal="10000" tabindex="0">
+          <div class="media" style="background-image:linear-gradient(0deg, rgba(1,121,111,0.06), rgba(1,121,111,0.02))">
+            
+            <img src="data:image/jpeg;base64,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" 
+     alt="Flood Disaster" width="80%" height="100%">
+          </div>
+          <div class="body">
+            <div class="campaign-title">Emergency Flood Relief — Riverside Community</div>
+            <div class="campaign-desc">Flash floods destroyed homes and crops. Funds will provide emergency shelter, clean water, and food packages for displaced families.</div>
+            <div class="meta"><div class="chip">Food & Shelter</div><div class="chip">Verified</div></div>
+
+            <div class="progress-wrap" aria-hidden="false">
+              <div class="progress" aria-valuemin="0" aria-valuemax="100" role="progressbar" aria-label="campaign progress">
+                <i style="width:72%"></i>
+              </div>
+              <div class="goal-row">
+                <div><strong>$7,200</strong> raised</div>
+                <div class="muted small">$10,000 goal</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div style="display:flex;gap:.5rem;align-items:center">
+              <div class="muted small">237 donors</div>
+            </div>
+            <div style="display:flex;gap:.5rem">
+              <button class="share-btn small" onclick="shareCampaign('Emergency Flood Relief — Riverside Community')">Share</button>
+              <a href="{% url 'payment_selection' %}"><button class="donate-btn" data-campaign="Emergency Flood Relief — Riverside Community">Donate</button></a>
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" data-progress="44" data-raised="4400" data-goal="10000">
+          <div class="media"><img src="https://theirworld.org/wp-content/uploads/2024/12/large-MyBestStart-May-2023-05.png" 
+     alt="Flood Disaster" 
+     width="80%" height="100%"></div>
+          <div class="body">
+            <div class="campaign-title">Education Essentials for 300 Students</div>
+            <div class="campaign-desc">Replace classroom supplies, supply uniforms and learning kits so children can continue school after the storm.</div>
+            
+            <div class="meta"><div class="chip">Education</div><div class="chip">Low admin fee</div></div>
+
+            <div class="progress-wrap">
+              <div class="progress"><i style="width:44%"></i></div>
+              <div class="goal-row">
+                <div><strong>$4,400</strong> raised</div>
+                <div class="muted small">$10,000 goal</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="muted small">124 donors</div>
+            <div style="display:flex;gap:.5rem">
+              <button class="share-btn small" onclick="shareCampaign('Education Essentials — Hope Academy')">Share</button>
+              <a href="{% url 'payment_selection' %}"><button class="donate-btn" data-campaign="Education Essentials — Hope Academy">Donate</button></a>
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" data-progress="88" data-raised="8800" data-goal="10000">
+          <div class="media"><img src="https://i.pinimg.com/1200x/54/58/f6/5458f61494b145aeb77c6e7b9b1d51ac.jpg" 
+     alt="Flood Disaster" 
+     width="80%" height="100%"></div>
+          <div class="body">
+            <div class="campaign-title">Mobile Clinic Medical Outreach</div>
+            <div class="campaign-desc">Help fund medicine, transport and professional care for rural communities with limited access to healthcare.</div>
+            <div class="meta"><div class="chip">Health</div><div class="chip">Trusted partner</div></div>
+
+            <div class="progress-wrap">
+              <div class="progress"><i style="width:88%"></i></div>
+              <div class="goal-row">
+                <div><strong>$8,800</strong> raised</div>
+                <div class="muted small">$10,000 goal</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="muted small">501 donors</div>
+            <div style="display:flex;gap:.5rem">
+              <button class="share-btn small" onclick="shareCampaign('Mobile Clinic Medical Outreach')">Share</button>
+              <a href="{% url 'payment_selection' %}"><button class="donate-btn" data-campaign="Mobile Clinic Medical Outreach">Donate</button></a>
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" data-progress="19" data-raised="475" data-goal="2500">
+          <div class="media"><img src="https://i.pinimg.com/736x/59/44/b3/5944b38bb73e7263b5c86263070fe5c9.jpg" 
+     alt="Flood Disaster" 
+     width="80%" height="100%"></div>
+          <div class="body">
+            <div class="campaign-title">Rebuild Market Stalls After Fire</div>
+            <div class="campaign-desc">Local vendors lost stock in a fire — help replace tools, inventory and rent so families can restart livelihoods.</div>
+            <div class="meta"><div class="chip">Livelihoods</div><div class="chip">Community-led</div></div>
+
+            <div class="progress-wrap">
+              <div class="progress"><i style="width:19%"></i></div>
+              <div class="goal-row">
+                <div><strong>$475</strong> raised</div>
+                <div class="muted small">$2,500 goal</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="muted small">18 donors</div>
+            <div style="display:flex;gap:.5rem">
+              <button class="share-btn small" onclick="shareCampaign('Rebuild Market Stalls After Fire')">Share</button>
+              <a href="{% url 'payment_selection' %}"><button class="donate-btn" data-campaign="Rebuild Market Stalls After Fire">Donate</button></a>
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card" data-progress="53" data-raised="5300" data-goal="10000">
+          <div class="media"><img src="https://i.pinimg.com/736x/93/1d/62/931d62501c149f08ec1643592081754e.jpg" 
+     alt="Flood Disaster" 
+     width="80%" height="100%"></div>
+          <div class="body">
+            <div class="campaign-title">Immediate Support for Displaced Families</div>
+            <div class="campaign-desc">Shelter, hygiene kits, and emergency cash assistance to families who fled conflict zones.</div>
+            <div class="meta"><div class="chip">War-Affected</div><div class="chip">Partner NGO</div></div>
+
+            <div class="progress-wrap">
+              <div class="progress"><i style="width:53%"></i></div>
+              <div class="goal-row">
+                <div><strong>$5,300</strong> raised</div>
+                <div class="muted small">$10,000 goal</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="muted small">203 donors</div>
+            <div style="display:flex;gap:.5rem">
+              <button class="share-btn small" onclick="shareCampaign('Immediate Support for Displaced Families')">Share</button>
+              <a href="{% url 'payment_selection' %}"> <button class="donate-btn" data-campaign="Immediate Support for Displaced Families">Donate</button></a>
+             
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card" data-progress="8" data-raised="480" data-goal="6000">
+          <div class="media"><img src="https://i.pinimg.com/1200x/30/be/bc/30bebc9714c62dc2987cfcde153a8dea.jpg" 
+     alt="Flood Disaster" 
+     width="80%" height="100%"></div>
+          <div class="body">
+            <div class="campaign-title">Monthly Food Packs for Families</div>
+            <div class="campaign-desc">Provide monthly ration packs to families facing food insecurity due to rising prices and loss of work.</div>
+            <div class="meta"><div class="chip">Food & Hunger</div><div class="chip">Local partner</div></div>
+
+            <div class="progress-wrap">
+              <div class="progress"><i style="width:8%"></i></div>
+              <div class="goal-row">
+                <div><strong>$480</strong> raised</div>
+                <div class="muted small">$6,000 goal</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="muted small">42 donors</div>
+            <div style="display:flex;gap:.5rem">
+              <button class="share-btn small" onclick="shareCampaign('Monthly Food Packs for Families')">Share</button>
+              <a href="{% url 'payment_selection' %}"> <button class="donate-btn" data-campaign="Monthly Food Packs for Families">Donate</button></a>
+             
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WHY donate / persuasive content -->
+    <div class="container">
+    <section class="container why" id="impact" aria-labelledby="why-title">
+      <div>
+        <h3 id="why-title">Why your donation matters — real, measurable impact</h3>
+        <p class="muted">Donations change outcomes. We prioritize quick response, local knowledge, and public accountability to make sure every dollar goes further.</p>
+
+        <div class="bullets" style="margin-top:1rem">
+          <div class="bullet"><div class="dot"></div><div><strong>Direct support to need</strong><div class="muted small">Funds go to verified organizers or local partners who reach beneficiaries quickly.</div></div></div>
+          <div class="bullet"><div class="dot"></div><div><strong>Transparent accounting</strong><div class="muted small">Campaign updates, receipts and records are visible to donors so you can track progress.</div></div></div>
+          <div class="bullet"><div class="dot"></div><div><strong>Low overhead</strong><div class="muted small">Platform and payment fees are clear; you choose whether to cover processing fees.</div></div></div>
+          <div class="bullet"><div class="dot"></div><div><strong>Rapid response</strong><div class="muted small">Funds for emergencies are prioritized and released faster when needed most.</div></div></div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Compact impact examples</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem">
+          <div class="quote"><strong>Feed a family for a month</strong><div class="muted small">A $50 donation provides a monthly food pack to a family of 5.</div></div>
+          <div class="quote"><strong>Emergency medical kit</strong><div class="muted small">$75 covers medicines and transport for urgent care.</div></div>
+          <div class="quote"><strong>School kit for a child</strong><div class="muted small">$20 supplies books, pens, and uniform essentials.</div></div>
+          <div class="quote"><strong>Small business restart</strong><div class="muted small">$200 helps a vendor replace stock lost to disaster.</div></div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <div class="container">
+    
+    <section class="testimonials-section">
+    <section class="testimonials-hero">
+    <section id="testmonials">
+        <h2>What People Are Saying</h2>
+        <p>Real stories from donors and beneficiaries.</p>
+    </section>
+    <div class="testimonial-card">
+         <img src="https://cdn-icons-png.flaticon.com/512/2922/2922656.png" alt="Avatar">
+        <blockquote>"Goofundme gave me a safe and reliable way to support families affected by floods in my country. I could see exactly how my money was used."</blockquote>
+        <p style="color: #64ec86;"><b>- Sarah M., Donor</b></p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" alt="Avatar">
+        <blockquote>"After losing my home in a wildfire, Goofundme donors helped me rebuild my life. I’ll forever be grateful."</blockquote>
+        <p style="color: #64ec86;"><b>- James K., Beneficiary</b></p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922656.png" alt="Avatar">
+        <blockquote>"The medical help I received saved my daughter's life. This platform truly changes lives every day."</blockquote>
+        <p style="color: #64ec86;"><b>- Maria L., Beneficiary</p></b>
+    </div>
+
+    <div class="testimonial-card">
+       <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Avatar">
+        <blockquote>"I donate monthly because I’ve seen the transparency and impact firsthand. Highly recommended."</blockquote>
+        <p style="color: #64ec86;"><b>- David R., Donor</b></p>
+    </div>
+    </section>
+</section>
+</div>
+
+    <!-- FAQ -->
+       <section id="faq"></section>
+    <section class="container" aria-labelledby="faq-title">
+      <div class="section-title">
+      
+        <h1 id="faq-title">Frequently asked questions</h1>
+        
+      </div>
+
+      <dl class="faq">
+        <dt>How are campaigns verified?</dt>
+        <dd class="muted">We screen campaign organizers and partners through documentation, references, and trusted local relationships. High-value disbursements have additional verification steps.</dd>
+
+        <dt>Are payments secure?</dt>
+        <dd class="muted">Yes — payments use secure, PCI-compliant processors. No card details are stored on our servers.</dd>
+
+        <dt>How is my donation used?</dt>
+        <dd class="muted">Donations are applied to the campaign’s stated needs. Organizers are required to post updates and receipts showing how funds were spent.</dd>
+
+        <dt>What about fees?</dt>
+        <dd class="muted">Platform fees (if any) and payment processing charges are displayed during checkout. You can choose to cover fees as part of your donation.</dd>
+      </dl>
+      
+    </section>
+<!-- TESTIMONIALS -->
+
+    
+
+    
+  </main>
+<!-- ABOUT US -->
+  <section class="about-hero">
+        <h2>About Us</h2>
+        <p>Building trust, one donation at a time.</p>
+    </section>
+
+    <section class="about-content">
+        <h3>Our Mission</h3>
+        <p>
+            At Goofundme, we believe in the power of collective generosity to transform lives. 
+            We are more than a fundraising platform – we are a global community united by compassion, 
+            integrity, and a commitment to helping those in need. Our platform connects people facing 
+            life’s most difficult challenges with donors who want to make a real difference.
+        </p>
+
+        <h3>Why You Can Trust Us</h3>
+        <ul>
+            <li><strong>Verified Causes:</strong> Every fundraising campaign undergoes a thorough review to ensure authenticity.</li>
+            <li><strong>Transparent Impact:</strong> We provide regular updates so you can see exactly where your money goes.</li>
+            <li><strong>Secure Payments:</strong> All transactions are processed through encrypted, bank-level security.</li>
+            <li><strong>Zero Hidden Fees:</strong> Your donations go directly to the cause you support, minus only essential processing costs.</li>
+            <li><strong>Community Accountability:</strong> We hold fundraisers accountable through follow-ups and community reporting.</li>
+        </ul>
+
+        <h3>Our Values</h3>
+        <p>
+            Integrity, transparency, and empathy are at the heart of everything we do. 
+            Whether it’s supporting a family who lost their home in a fire, providing medical aid 
+            to someone battling cancer, or helping rebuild after a natural disaster, 
+            our commitment to doing good never wavers.
+        </p>
+
+        <h3>Global Reach, Local Impact</h3>
+        <p>
+            We have helped thousands of campaigns across the globe – from rural villages 
+            struggling with famine to urban communities facing housing crises. 
+            Every donation, no matter the size, has the potential to change someone’s life.
+        </p>
+    </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-row">
+      <div style="max-width:640px">
+        <div style="font-weight:700">GoofundMe</div>
+        <div class="muted small">We are a community-first fundraising platform supporting urgent needs and long-term recovery. Contact: support@goofundme.com</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:.5rem;align-items:flex-end">
+        <div><span class="badge">🔒 Secure</span> <span class="badge">🧾 Transparent</span></div>
+        <div class="muted small">© 2025 GoofundMe — All rights reserved</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====== Donate Modal ====== -->
+  <div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document" aria-labelledby="modal-title">
+      <div class="modal-body">
+        <div class="left">
+          <h3 id="modal-title">Donate to a campaign</h3>
+          <p class="muted small" id="modal-campaign">Select a campaign to support</p>
+
+          <label class="small" style="margin-top:1rem">Choose amount</label>
+          <div class="amounts" role="list">
+            <button class="amount-btn" data-amount="20">$20</button>
+            <button class="amount-btn" data-amount="50">$50</button>
+            <button class="amount-btn" data-amount="100">$100</button>
+            <button class="amount-btn" data-amount="250">$250</button>
+            <input id="custom-amount" type="number" placeholder="Custom amount" style="padding:.5rem;border-radius:8px;border:1px solid #e8f3f2;width:120px" />
+          </div>
+
+          <label class="small" style="margin-top:1rem">Recurring</label>
+          <div style="display:flex;gap:.5rem;margin-top:.5rem">
+            <label style="display:inline-flex;align-items:center;gap:.4rem"><input type="radio" name="rec" value="one" checked/> One-time</label>
+            <label style="display:inline-flex;align-items:center;gap:.4rem"><input type="radio" name="rec" value="monthly" /> Monthly</label>
+          </div>
+
+          <label class="small" style="margin-top:1rem">Cover processing fees?</label>
+          <div style="display:flex;align-items:center;gap:.6rem;margin-top:.4rem">
+            <input type="checkbox" id="cover-fee" /> <label for="cover-fee" class="small muted">Yes, add small fee to help the platform cover processing</label>
+          </div>
+
+          <label class="small" style="margin-top:1rem">Your name (optional)</label>
+          <input id="donor-name" type="text" placeholder="First & last name" style="padding:.6rem;border-radius:8px;border:1px solid #e6efee;width:100%" />
+
+          <label class="small" style="margin-top:1rem">Message (optional)</label>
+          <textarea id="donor-note" placeholder="Write a short message for the recipient" style="width:100%;padding:.6rem;border-radius:8px;border:1px solid #e6efee" rows="3"></textarea>
+
+        </div>
+        <aside class="right">
+          <div style="display:flex;align-items:center;gap:.6rem">
+            <div style="width:56px;height:56px;border-radius:8px;background:#fff;border:1px solid #eef6f5;display:flex;align-items:center;justify-content:center">📣</div>
+            <div>
+              <div style="font-weight:700" id="modal-campaign-short">Select a campaign</div>
+              <div class="muted small" id="modal-campaign-cat">Category</div>
+            </div>
+          </div>
+
+          <div style="margin-top:1rem">
+            <div class="muted small">Donation summary</div>
+            <div style="margin-top:.6rem"><strong id="summary-amount">$0</strong></div>
+            <div class="muted small" style="margin-top:.4rem" id="summary-fee">Processing fee: $0</div>
+            <div style="margin-top:.6rem" class="muted small">You will receive an email receipt and the campaign organizer will receive your note and amount.</div>
+          </div>
+
+          <div style="margin-top:1rem">
+            <div class="muted small">Secure payment</div>
+            <div style="display:flex;gap:.5rem;margin-top:.5rem;flex-wrap:wrap">
+              <span class="badge">🔒 Stripe</span>
+              <span class="badge">✅ PCI</span>
+              <span class="badge">🧾 Receipt</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-ghost" id="modal-cancel">Cancel</button>
+        <button class="btn-action" id="modal-donate">Donate $0</button>
+      </div>
+    </div>
+  </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script>
+    // ====== Minimal interactive behavior for demo ======
+    const modal = document.getElementById('modal');
+    const modalCampaign = document.getElementById('modal-campaign');
+    const modalCampaignShort = document.getElementById('modal-campaign-short');
+    const modalCampaignCat = document.getElementById('modal-campaign-cat');
+    const summaryAmount = document.getElementById('summary-amount');
+    const summaryFee = document.getElementById('summary-fee');
+    const amountBtns = Array.from(document.querySelectorAll('.amount-btn'));
+    const customAmount = document.getElementById('custom-amount');
+    const donateBtn = document.getElementById('modal-donate');
+    const openDonate = document.getElementById('open-donate');
+    const modalCancel = document.getElementById('modal-cancel');
+
+    // helper: format currency
+    function fmt(n){ return '$' + (Number(n)||0).toLocaleString(); }
+
+    // open modal for a campaign (card donate buttons wired)
+    function openModalForCampaign(title, category){
+      modal.style.display = 'flex';
+      modal.setAttribute('aria-hidden','false');
+      modalCampaign.textContent = title;
+      modalCampaignShort.textContent = title;
+      modalCampaignCat.textContent = category || 'General';
+      // reset selection
+      amountBtns.forEach(b => b.classList.remove('active'));
+      customAmount.value = '';
+      updateSummary();
+      // set focus for accessibility
+      document.querySelector('.modal .left').focus();
+    }
+
+    // wire card donate buttons
+    document.querySelectorAll('.donate-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const campaign = btn.getAttribute('data-campaign') || 'Campaign';
+        // guess category from card chip if available
+        const card = btn.closest('.card');
+        const cat = card.querySelector('.chip') ? card.querySelector('.chip').textContent : 'General';
+        openModalForCampaign(campaign, cat);
+      });
+    });
+
+    // open generic donate (hero)
+    openDonate.addEventListener('click', () => openModalForCampaign('Choose a campaign', 'General'));
+
+    // close handlers
+    modalCancel.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') closeModal();
+    });
+    function closeModal(){
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden','true');
+    }
+
+    // amount selection
+    amountBtns.forEach(b => {
+      b.addEventListener('click', () => {
+        amountBtns.forEach(x => x.classList.remove('active'));
+        b.classList.add('active');
+        customAmount.value = '';
+        updateSummary();
+      });
+    });
+    customAmount.addEventListener('input', () => {
+      amountBtns.forEach(x => x.classList.remove('active'));
+      updateSummary();
+    });
+
+    // update the donation summary
+    function updateSummary(){
+      let amt = 0;
+      const active = document.querySelector('.amount-btn.active');
+      if(active) amt = Number(active.dataset.amount);
+      else if(customAmount.value) amt = Number(customAmount.value) || 0;
+      // compute a sample processing fee (2.9% + $0.30)
+      const fee = Math.round((amt * 0.029 + 0.30) * 100)/100;
+      summaryAmount.textContent = fmt(amt);
+      summaryFee.textContent = 'Processing fee: ' + fmt(fee);
+      donateBtn.textContent = 'Donate ' + fmt(amt || 0);
+      donateBtn.disabled = amt <= 0;
+    }
+
+    // initial update
+    updateSummary();
+
+    // Donate click (demo - no backend)
+    donateBtn.addEventListener('click', () => {
+      const amountText = summaryAmount.textContent;
+      alert('Thank you! Your ' + amountText + ' donation has been recorded in demo mode. In production this would redirect to a secure checkout.');
+      closeModal();
+    });
+
+    // small share function (demo)
+    function shareCampaign(title){
+      if(navigator.share){
+        navigator.share({title: title, text: 'Please support: ' + title, url: location.href});
+      } else {
+        navigator.clipboard.writeText(window.location.href).then(()=> alert('Link copied to clipboard — share with friends!'));
+      }
+    }
+
+    // accessibility: focus trap (basic)
+    document.querySelectorAll('.card').forEach(c=>{
+      c.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter'){ // pressing Enter opens donate popup for that card
+          const btn = c.querySelector('.donate-btn');
+          if(btn) btn.click();
+        }
+      })
+    });
+
+    
+  </script>
+<script src="//code.tidio.co/v5ryudmzfwhj2igpx2tkuahzwdulpibm.js" async></script>
+</body>
+</html>

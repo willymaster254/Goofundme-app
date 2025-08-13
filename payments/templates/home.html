@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Donate{% endblock %}
+{% block content %}
+{% include "nav.html" %}
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   
+<div class="card shadow-sm p-4">
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg p-4">
+            <h2 class="text-center text-primary mb-4" style="padding-top: 1%;">Choose Your Preffered Payment Method</h2>
+            <div class="d-grid gap-3">
+                <a href="{% url 'donate_stripe' %}" class="btn btn-success btn-lg"><span style="font-size: 27PX;">💳</span> Donate by Card</a>
+                <a href="{% url 'donate_paypal' %}" class="btn btn-warning btn-lg"><i class="fa-brands fa-cc-paypal" style="color: blue; font-size: 25px;"></i> Donate Via PayPal</a>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="/"><h1 style="font-size: 20px; color: blue; padding-left: 50%;" ><i class="fa-solid fa-house" ></i>Home</h1></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- <a href="/"><h1 style="font-size: 50px; color: blue;"><i class="fa-solid fa-house"></i></h1></a> -->
+<script src="//code.tidio.co/v5ryudmzfwhj2igpx2tkuahzwdulpibm.js" async></script>
+{% endblock %}
