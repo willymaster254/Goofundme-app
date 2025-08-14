@@ -2,9 +2,9 @@ import stripe
 from django.conf import settings
 from django.shortcuts import render, redirect
 from .forms import DonationForm
-from paypal.standard.forms import PayPalPaymentsForm
+# from paypal.standard.forms import PayPalPaymentsForm
 
-stripe.api_key = settings.STRIPE_SECRET_KEY
+# stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def home(request):
     return render(request, "index.html")
@@ -53,8 +53,8 @@ def donate_paypal(request):
                 "return_url": request.build_absolute_uri("/success"),
                 "cancel_return": request.build_absolute_uri("/cancel"),
             }
-            form_paypal = PayPalPaymentsForm(initial=paypal_dict, button_type="donate")
-            return render(request, "process_paypal.html", {"form": form_paypal})
+            # form_paypal = PayPalPaymentsForm(initial=paypal_dict, button_type="donate")
+            # return render(request, "process_paypal.html", {"form": form_paypal})
     else:
         form = DonationForm()
 
